@@ -23,7 +23,7 @@ router.post('/remove-product', (req, res, next) =>{
   // const id = req.body.productId;
   // console.log(id);
   adminData.products.splice(removeIndex, 1);
-  
+   
   // const productIndex = adminData.products.indexOf(adminData.products.productId === id);
   // console.log(productIndex);
 
