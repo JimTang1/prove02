@@ -15,7 +15,7 @@ router.get('/', (req, res, next) => {
     path: '/',
   });
 });
-
+  
 router.post('/remove-product', (req, res, next) =>{
   // console.log("remove");
   const removeIndex = adminData.products.findIndex(prods => prods.productId === req.body.productId);
