@@ -1,5 +1,6 @@
 const path = require('path');
 
+
 const express = require('express');
 const bodyParser = require('body-parser');
 
@@ -20,4 +21,8 @@ app.use((req, res, next) => {
     res.status(404).render('404', {pageTitle: 'Page not found!!!'});
 });
 
-app.listen(3000);
+
+const PORT = process.env.PORT || 3000; // So we can run on heroku || (OR) localhost:5000
+app.listen(PORT, () => console.log(`Listening on ${PORT}`));
+
+// app.listen(3000);
